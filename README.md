@@ -1,7 +1,7 @@
 # Simple_Website_blocker
 A simple Website Blocker for windows.
 
-<img src=https://github.com/Anish-M-code/Simple_Website_blocker/raw/master/screenshot.JPG">
+<img src="https://github.com/Anish-M-code/Simple_Website_blocker/raw/master/screenshot.JPG">
                                                                                           
 Quick Installation
 ------------------
