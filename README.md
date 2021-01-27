@@ -1,4 +1,5 @@
 # Simple_Website_blocker
+[![DeepSource](https://deepsource.io/gh/Anish-M-code/Simple_Website_blocker.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/Anish-M-code/Simple_Website_blocker/?ref=repository-badge)
 A simple Website Blocker for windows.
 
 <img src="https://github.com/Anish-M-code/Simple_Website_blocker/raw/master/screenshot.JPG">
