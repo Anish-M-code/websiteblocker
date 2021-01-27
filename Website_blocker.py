@@ -63,7 +63,7 @@ def engine(url):
       
     # Creating batch file to block website by pointing it to local host using hosts file.
     with open('script.bat','a') as f:
-          f.write('echo 127.0.0.1 '+url+' >>C:\Windows\System32\drivers\etc\hosts \n')
+          f.write('echo 127.0.0.1 '+url+' >>C:\\Windows\\System32\\drivers\\etc\\hosts \n')
 
 
 # Function to import blocklisted urls from text file.
@@ -108,7 +108,7 @@ def unblockall():
 
     # Creating windows batch file to truncate hosts file.
     with open('script.bat','w') as f:
-           f.write('echo #>C:\Windows\System32\drivers\etc\hosts')
+           f.write('echo #>C:\\Windows\\System32\\drivers\\etc\\hosts')
     print('Please run script.bat generated as administrator to delete all blocked websites.')
     pause()
     menu()
@@ -127,7 +127,7 @@ def block():
                  
     # Creating batch file to block website by pointing it to local host using hosts file.
     with open('script.bat','w') as f:
-          f.write('echo 127.0.0.1 '+url+' >>C:\Windows\System32\drivers\etc\hosts\n')
+          f.write('echo 127.0.0.1 '+url+' >>C:\\Windows\\System32\\drivers\\etc\\hosts\n')
     print('please run script.bat generated as administrator to block website.')
     pause()
     menu()
@@ -144,18 +144,18 @@ def unblock():
     elif url.startswith('http://'):
                url = url.strip('http://')
        
-    with open('C:\Windows\System32\drivers\etc\hosts','r') as f:
+    with open('C:\\Windows\\System32\\drivers\\etc\\hosts','r') as f:
        for line in f:
            if len(line.strip())>9:
                  blocklist.append(line.split()[1])
                  
     with open('script.bat','w') as f:
-           f.write('echo #>C:\Windows\System32\drivers\etc\hosts\n')
+           f.write('echo #>C:\\Windows\\System32\\drivers\\etc\\hosts\n')
     for i in blocklist:
        if url !=i :
           flag += 1
           with open('script.bat','a') as f:
-             f.write('echo 127.0.0.1 '+i+' >>C:\Windows\System32\drivers\etc\hosts\n')
+             f.write('echo 127.0.0.1 '+i+' >>C:\\Windows\\System32\\drivers\\etc\\hosts\n')
     if flag == len(blocklist):
          print('Entered website is not blocked!')
          if os.path.exists('script.bat'):
@@ -173,7 +173,7 @@ def unblock():
 # Function to display currently blocked domains.
 def display():
     print('\n===Currently Blocked Websites===\n')
-    with open('C:\Windows\System32\drivers\etc\hosts','r') as f:
+    with open('C:\\Windows\\System32\\drivers\\etc\\hosts','r') as f:
         for line in f:
             if len(line.strip()) > 9:
                 print(line.split()[1])
@@ -188,7 +188,7 @@ def import_hostfile():
   file=input('Enter hostfile Location to be imported:')
   if os.path.exists(file):
     with open('script.bat','w') as f:
-      f.write('move '+os.getcwd()+'\\'+file+' C:\Windows\System32\drivers\etc\hosts')
+      f.write('move '+os.getcwd()+'\\'+file+' C:\\Windows\\System32\\drivers\\etc\\hosts')
     print('\nPlease run script.bat script as administrator to continue...')
   else:
     print('File Not Found!\n')
@@ -200,7 +200,7 @@ def import_hostfile():
 # Function to export hostile to current working directory.    
 def export_hostfile():
   with open('script.bat','w') as f:
-     f.write('copy C:\Windows\System32\drivers\etc\hosts '+os.getcwd())
+     f.write('copy C:\\Windows\\System32\\drivers\\etc\\hosts '+os.getcwd())
   print('\nPlease run script.bat script as administrator to continue...')
   pause()
   menu()
