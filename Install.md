@@ -16,11 +16,11 @@ Then to get started : -
 For Windows:
 
 ```
-py -m Website_blocker.py
+py  Website_blocker.py
 ```
 
 For Linux based Distributions:
 
 ```
-python3 -m Website_blocker.py
+python3  Website_blocker.py
 ```
