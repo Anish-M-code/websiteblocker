@@ -18,6 +18,6 @@ pip install websiteblocker
 Then type following command to get started :-
 
 ```
-py -m websiteblocker 
+websiteblocker 
 ```
-                                                                                          
+To run the program by directly downloading from github refer [ Instructions](/Install.md) here.                                                                                         
