@@ -19,8 +19,3 @@ For Windows:
 py Website_blocker.py
 ```
 
-For Linux based Distributions:
-
-```
-python3 Website_blocker.py
-```
