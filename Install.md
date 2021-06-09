@@ -2,7 +2,7 @@
 
 Git and Python 3 must be installed in the computer.
 
-Run the following commands in Linux terminal / Windows powershell / command prompt to download.
+Run the following commands in Windows powershell / command prompt to download.
 
 ```
 git clone https://github.com/Anish-M-code/Simple_Website_blocker.git
