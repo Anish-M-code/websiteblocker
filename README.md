@@ -1,7 +1,7 @@
 # Simple_Website_blocker
 
 
-A simple Website Blocker for windows.
+A simple Website Blocker for windows , MAC OS and all Linux Distributions.
 
 <img src="https://github.com/Anish-M-code/Simple_Website_blocker/raw/master/screenshot.JPG">
                                                                                           
@@ -10,7 +10,7 @@ Quick Installation
 
 To Install from [PyPI](https://pypi.org/project/websiteblocker/):
 
-Run the following commands in Windows powershell / command prompt to install from pypi:-
+Run the following commands in Windows powershell / command prompt / terminal to install from pypi:-
 
 ```
 pip install websiteblocker
