@@ -1,7 +1,7 @@
 # Simple_Website_blocker
 
 
-A simple Website Blocker for windows , MAC OS and all Linux Distributions.
+A simple Website Blocker for windows , mac OS and all Linux Distributions.
 
 <img src="https://github.com/Anish-M-code/Simple_Website_blocker/raw/master/screenshot.JPG">
                                                                                           
